@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Catering Admin Panel</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/megna-dark.css" id="theme" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <div class="top-left-part">
+                    <!-- Logo -->
+                    <a class="logo" href="index.html">
+                        <!-- Logo icon image, you can use font-icon also -->
+                        <b>
+                            <!--This is dark logo icon-->
+                            <!-- <img src="../plugins/images/admin-logo.png" alt="home" class="dark-logo"> -->
+                            <!--This is light logo icon-->
+                            <!-- <img src="../plugins/images/admin-logo-dark.png" alt="home" class="light-logo"> -->
+                        </b>
+                        <!-- Logo text image you can use text also -->
+                        <span class="hidden-xs">
+                            <!--This is dark logo text-->
+                            <!-- <img src="../plugins/images/admin-text.png" alt="home" class="dark-logo"> -->
+                            <!--This is light logo text-->
+                            <!-- <img src="../plugins/images/admin-text-dark.png" alt="home" class="light-logo"> -->
+                        </span>
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <!-- Search input and Toggle icon -->
+                <ul class="nav navbar-top-links navbar-left">
+                    <li><a href="javascript:void(0)" class="open-close waves-effect waves-light"><i class="ti-menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="mdi mdi-bell"></i>
+                            <div class="notify">
+                                <span class="heartbit"></span> <span class="point"></span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu mailbox">
+                            <li>
+                                <div class="drop-title">You have 4 new messages</div>
+                            </li>
+                            <li>
+                                <div class="message-center">
+                                    <a href="#">
+                                        <div class="user-img">
+                                            <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle">
+                                            <span class="profile-status online pull-right"></span>
+                                        </div>
+                                        <div class="mail-contnet">
+                                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img">
+                                            <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"><span class="profile-status busy pull-right"></span>
+                                        </div>
+                                        <div class="mail-contnet">
+                                            <h5>Sonu Nigam</h5><span class="mail-desc">I've sung a song! See you at</span><span class="time">9:10 AM</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img">
+                                            <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"><span class="profile-status away pull-right"></span>
+                                        </div>
+                                        <div class="mail-contnet">
+                                            <h5>Arijit Sinh</h5><span class="mail-desc">I am a singer!</span><span class="time">9:08 AM</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img">
+                                            <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle">
+                                            <span class="profile-status offline pull-right"></span>
+                                        </div>
+                                        <div class="mail-contnet">
+                                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span><span class="time">9:02 AM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="text-center" href="javascript:void(0);">
+                                    <strong>See all notifications</strong><i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#">
+                            <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle">
+                            <b class="hidden-xs">Owner</b>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#"><i class="ti-settings"></i>Account Setting</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav slimscrollsidebar">
+                <div class="sidebar-head">
+                    <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3>
+                </div>
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="#" class="waves-effect active">
+                            <i class="mdi mdi-av-timer fa-fw"></i>
+                            <span class="hide-menu">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect">
+                            <i class="mdi mdi-content-copy fa-fw"></i>
+                            <span class="hide-menu">
+                                Menu
+                                <span class="fa arrow"></span>
+                                <span class="label label-rouded label-warning pull-right">30</span>
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="adminmenu.html"><i class="ti-layout-width-default fa-fw"></i><span class="hide-menu">Ubah</span></a>
+                            </li>
+                            <li>
+                                <a href="blank.html"><i class="ti-layout-sidebar-left fa-fw"></i><span class="hide-menu">Blank Page</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="waves-effect">
+                                    <i class="ti-email fa-fw"></i><span class="hide-menu">Email Templates</span><span class="fa arrow"></span>
+                                </a>adadds
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="../email-templates/basic.html">
+                                            <i class="fa-fw">B</i><span class="hide-menu">Basic</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../email-templates/alert.html">
+                                            <i class="ti-alert fa-fw"></i><span class="hide-menu">Alert</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../email-templates/billing.html">
+                                            <i class="ti-wallet fa-fw"></i><span class="hide-menu">Billing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../email-templates/password-reset.html">
+                                            <i class="ti-more fa-fw"></i><span class="hide-menu">Reset Pwd</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="devider"></li>
+                    <li>
+                        <a href="javascript:void(0)" class="waves-effect">
+                            <i class="mdi mdi-checkbox-multiple-marked-outline fa-fw"></i>
+                            <span class="hide-menu">Multi-Level Dropdown<span class="fa arrow"></span></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i data-icon="/" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu">Second Level Item</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i data-icon="7" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu">Second Level Item</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="waves-effect">
+                                    <i data-icon="&#xe008;" class="linea-icon linea-basic fa-fw"></i>
+                                    <span class="hide-menu">Third Level</span><span class="fa arrow"></span>
+                                </a>
+                                <ul class="nav nav-third-level">
+                                    <li> <a href="javascript:void(0)"><i class=" fa-fw">T</i><span class="hide-menu">Third Level Item</span></a></li>
+                                    <li> <a href="javascript:void(0)"><i class=" fa-fw">M</i><span class="hide-menu">Third Level Item</span></a></li>
+                                    <li> <a href="javascript:void(0)"><i class=" fa-fw">R</i><span class="hide-menu">Third Level Item</span></a></li>
+                                    <li> <a href="javascript:void(0)"><i class=" fa-fw">G</i><span class="hide-menu">Third Level Item</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html" class="waves-effect">
+                            <i class="mdi mdi-logout fa-fw"></i><span class="hide-menu">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Dashboard</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="admindashboard.html" class="active">Dashboard</a></li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2 class="m-b-0 font-medium">$354.50</h2>
+                                    <h5 class="text-muted m-t-0">Total Income</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div id="ct-bar-chart" class="pull-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2 class="m-b-0 font-medium">4567</h2>
+                                    <h5 class="text-muted m-t-0">Yearly Sales</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div id="ct-main-bal" style="height: 70px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2 class="m-b-0 font-medium">356</h2>
+                                    <h5 class="text-muted m-t-0">Monthly Sales</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div id="ct-extra" style="height: 70px" class="pull-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-8 col-sm-12">
+                        <div class="calendar-widget m-b-30">
+                            <div class="cal-left">
+                                <h1>23</h1>
+                                <h4>Thursday</h4> <span></span>
+                                <h5>March 2017</h5>
+                                <div class="cal-btm-text"> <a href="">3 TASKS</a>
+                                    <h5>Prepare project</h5>
+                                </div>
+                            </div>
+                            <div class="cal-right bg-theme">
+                                <table class="cal-table">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="5">
+                                                <h1>March</h1>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SUN</td>
+                                            <td>MON</td>
+                                            <td>TUE</td>
+                                            <td>WED</td>
+                                            <td>THU</td>
+                                            <td>FRI</td>
+                                            <td>SAT</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td class="cal-active">23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td>31</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12">
+                        <div class="bg-theme-alt">
+                            <div id="ct-daily-sales" class="p-t-30" style="height: 300px"></div>
+                        </div>
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <h2 class="m-b-0 font-medium">Week Sales</h2>
+                                    <h5 class="text-muted m-t-0">160 sales</h5></div>
+                                <div class="col-xs-4">
+                                    <div class="circle circle-md bg-info pull-right m-t-10"><i class="ti-shopping-cart"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center">2017 &copy; Probis 2</footer>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page Content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- chartist chart -->
+    <script src="../plugins/bower_components/chartist-js/dist/chartist.min.js"></script>
+    <script src="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script>
+        new Chartist.Bar('#ct-daily-sales', {
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            series: [
+                [5, 4, 3, 7, 5, 2, 3]
+            ]
+        }, {
+            axisX: {
+                showLabel: false,
+                showGrid: false,
+                // On the x-axis start means top and end means bottom
+                position: 'start'
+            },
+            chartPadding: {
+                top: -20,
+                left: 45,
+            },
+            axisY: {
+                showLabel: false,
+                showGrid: false,
+                // On the y-axis start means left and end means right
+                position: 'end'
+            },
+            height: 335,
+            plugins: [
+                Chartist.plugins.tooltip()
+            ]
+        });
+    </script>
+</body>
+</html>
