@@ -21,7 +21,7 @@ if(isset($_POST['import'])){ // Jika user mengklik tombol Import
     echo "Error deleting record: " . $conn->error;
   }
   // "localhost:3309","root","3KJSvjbFRFTLdA76","pabrik");
-  $mysqli = new mysqli("localhost:3309", "root", "3KJSvjbFRFTLdA76", "pabrik");
+  $mysqli = new mysqli("localhost", "root", "", "pabrik");
   $inputFileType = 'CSV';
   $inputFileName = 'tmp/data.csv';
   $reader = PHPExcel_IOFactory::createReader($inputFileType);

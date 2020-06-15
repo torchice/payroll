@@ -106,5 +106,5 @@
 			return $this->connection()->escape_string($var);
 		}
 	}
-	$db = new Database("localhost","root","3KJSvjbFRFTLdA76","pabrik");
+	$db = new Database("localhost","root","","pabrik");
 ?>
